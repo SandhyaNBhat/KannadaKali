@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spcreations.kannadakali">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_kannadakali"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeActionBar">
+        <activity
+            android:name=".ConvSchoolBus"
+            android:label="With School Bus Staff"
+            android:parentActivityName=".ConversationsActivity"/>
+
+        <activity android:name=".ConvServiceProviders"
+            android:label="Converse With Service Providers"
+            android:parentActivityName=".ConversationsActivity"/>
+        <activity android:name=".ConvVendor"
+            android:label="Converse with vendors"
+            android:parentActivityName=".ConversationsActivity"/>
+        <activity android:name=".ConvHouseHelp"
+            android:label="Converse with Househelp"
+            android:parentActivityName=".ConversationsActivity"/>
+        <activity android:name=".ConvAutoDriver"
+            android:label="Conversation with Autodriver"
+            android:parentActivityName=".ConversationsActivity"/>
+        <activity
+            android:name=".ConversationsActivity"
+            android:label="Conversations"
+            android:parentActivityName=".MainActivity" />
+
+
+        <activity
+            android:name=".ColorsActivity"
+            android:label="@string/category_colors"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PhrasesActivity"
+            android:label="@string/category_phrases"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DaysActivity"
+            android:label="@string/category_days"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FruitsActivity"
+            android:label="@string/category_fruits"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FlowersActivity"
+            android:label="@string/category_flowers"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FamilyActivity"
+            android:label="@string/category_family"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".NumbersActivity"
+            android:label="@string/category_numbers"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
