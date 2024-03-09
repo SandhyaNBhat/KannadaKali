@@ -69,7 +69,8 @@
             android:label="@string/category_numbers"
             android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
