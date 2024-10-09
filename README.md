@@ -1,4 +1,5 @@
-Kannada Kali
+#Kannada Kali
+
 This app makes learning kannada language easy and fun. 
 English words with kannada translations are given along with audio for each of the categories.
 
